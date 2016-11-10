@@ -1,3 +1,5 @@
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
     entry: "./entry",
     output: {
@@ -6,7 +8,12 @@ module.exports = {
     },
     module: {
       loaders: [
-        { test: /\.css$/, loader: "style-loader!css-loader" },
+        { test: /\.css$/, loader: "style-loader!css-loader!postcss-loader" },
+      ]
+    },
+    postcss() {
+      return [
+        autoprefixer({ browsers: ['> 1%'] })
       ]
     }
 }

@@ -1,3 +1,7 @@
 body {
   background: red;
 }
+
+.gradient {
+  background: linear-gradient(to left, black, white);
+}
