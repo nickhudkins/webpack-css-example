@@ -1,0 +1,20 @@
+{
+  "name": "walk-by",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:external": "webpack --config webpack.config.external.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "0.25.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "postcss-loader": "1.1.1",
+    "style-loader": "0.13.1",
+    "webpack": "1.13.3"
+  }
+}
